@@ -1,0 +1,19 @@
+
+func add(a, b) {
+    return a + b;
+}
+
+func expo(a, b) {
+    return a ** b;
+}
+
+print(add(expo(3, 2), 4)) // 13
+
+// Named parameters
+func quotes(a = "N/A") {
+    return "\"" + a + "\"";
+}
+print(quotes("Hello World")) // "Hello World"
+
+// Named arguements
+print(expo(b = 2, a = 3)) // 9

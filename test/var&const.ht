@@ -1,0 +1,23 @@
+
+var a = 1;
+var b = 4;
+
+print(a) // 1
+a = 33;
+
+print(a) // 33
+
+const x = b;
+
+print(x) // 4
+
+b = 53;
+
+print(x) // 4
+print(b) // 53
+
+
+// **** THE FOLLOWING STATEMENTS CAUSE ERRORS
+// **** UNCOMMENT TO SEE THE ERRORS IN ACTION
+// x = 12323; // RuntimeError: Cannot reasing to constant.
+// var a = 2; // RuntimeError: Cannot redeclared variable 'a'.

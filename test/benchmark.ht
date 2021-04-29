@@ -1,0 +1,19 @@
+/**
+ * Function to compute the time in milliseconds to execute a callback
+ * @param msg: The message to display once the callback has completed execution.
+ * @param callback: The callback to be benchmarked.
+ */
+func bench(msg, callback) {
+    var a = clock();
+    callback()
+    var b = clock();
+
+    print(msg)
+    print(b - a + " Milliseconds")
+}
+
+// **** Benchmark #1 - Loop through array elements.
+bench("Loop through 1 Million array elements: ", fn() -> {
+    var arr = 0..1000000;
+    for (var i = 0; i < arr.length; i++) { }
+})

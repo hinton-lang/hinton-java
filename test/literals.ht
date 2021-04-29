@@ -1,0 +1,29 @@
+/**
+ * Numeric Literals
+ */
+print(1002930923) // should print `1002930923` 
+print(1002_930_923) // should print `1002930923`
+print(45.2030802) // should print `45.2030802`
+print(891.203_802) // should print `891.203802`
+print(.123) // should print `0.123`
+
+print(0x1f4b) // should print `8011`
+print(0o426027) // should print `142359`
+print(0b101011) // should print `43`
+
+/**
+ * String Literals
+ */
+print("Hello World") // should print `Hello World` 
+print("Some \"scaped\" characters") // should print `Some "scaped" characters`
+
+/**
+ * Boolean Literals
+ */
+print(true) // should print `true` 
+print(false) // should print `false`
+
+/**
+ * Null Literals
+ */
+print(null) // should print `null`

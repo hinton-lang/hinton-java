@@ -1,0 +1,27 @@
+
+print(typeOf(123))      // Int
+print(typeOf(123.0))    // Float
+
+print(typeOf(true))     // Bool
+print(typeOf(false))    // Bool
+
+print(typeOf(null))     // Null
+
+var a = { first: "hi there!" }
+print(typeOf(a))        // Dict
+print(typeOf(a.first))  // String
+
+enum MyEnum {
+    ENUM_MEMBER_1,
+    ENUM_MEMBER_2
+}
+print(typeOf(MyEnum))   // MyEnum
+
+func add(a, b) { return a + b; }
+print(typeOf(add))      // Function
+
+var t = fn(x) -> x;
+print(typeOf(t))        // Function
+
+print(typeOf(0..10))    // Array
+print(typeOf([1, 2]))   // Array
